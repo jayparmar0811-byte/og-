@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Stall - Jay Babari</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Food Stall</h1>
+    <p>Taste jo dil jeet le</p>
+</header>
+
+<div class="search-container">
+    <button class="home-btn" >Home</button>
+    <input type="text" id="searchInput" placeholder="Search...">
+</div>
+
+<section class="products" id="product-list"></section>
+
+<section class="products">
+
+    <div class="product-card">
+        <img src="b50d22aed638664f17fe53e43680d7c8 - Copy.jpg">
+        <h3>Burger</h3>
+        <p>₹50</p>
+    </div>
+
+    <div class="product-card">
+        <img src="OIP (8).jpg">
+        <h3>Samosa</h3>
+        <p>₹50</p>
+    </div>
+
+     <div class="product-card">
+        <img src="0b5eb439a0fe2c71aa7b427d3402e1ea.jpg">
+        <h3>Momos</h3>
+        <p>₹50</p>
+    </div>
+
+     <div class="product-card">
+        <img src="OIP - Copy.jpg">
+        <h3>Vada Pau</h3>
+        <p>₹50</p>
+    </div>
+
+     <div class="product-card">
+        <img src="OIP (5).jpg">
+        <h3>Paubhaaji</h3>
+        <p>₹50</p>
+    </div>
+
+     <div class="product-card">
+        <img src="OIP (2).jpg">
+        <h3>Tea</h3>
+        <p>₹50</p>
+    </div>
+
+     <div class="product-card">
+        <img src="OIP (4).jpg">
+        <h3>Coffee</h3>
+        <p>₹50</p>
+    </div>
+
+     <div class="product-card">
+        <img src="OIP (9) - Copy.jpg">
+        <h3>Cold Drink</h3>
+        <p>₹50</p>
+    </div>
+
+
+</section>
+
+<div class="cart-section">
+    <div style="font-size: 15px;">
+        🛒 Cart: <span id="cart-count">0</span> | Total: ₹<span id="total-price">0</span>
+    </div>
+    <button class="buy-btn" id="buyNowBtn">Buy Now</button>
+    <div id="cart-items" style="max-height: 200px; overflow-y: auto; text-align: left; margin-top: 10px;">show add items</div>
+</div>
+
+<div id="order-overlay" >
+    <div id="order-form" >
+        <h3>Buyer Details</h3>
+        <input type="text" id="cust-name" placeholder="તમારું નામ">
+        <input type="number" id="cust-mobile" placeholder="મોબાઇલ નંબર">
+        <input type="text" id="cust-address" placeholder="સરનામું">
+        <!-- Order Form ની અંદર આ ઉમેરો -->
+<label>પેમેન્ટની રીત પસંદ કરો:</label><br>
+<input type="radio" name="payment" value="Cash on Delivery" id="cod"> <label for="cod">Cash on Delivery</label><br>
+<input type="radio" name="payment" value="Online Payment (UPI)" id="online"> <label for="online">Online Payment (UPI/QR)</label><br>
+        <button class="WhatsApp-btn" onclick="submitOrder()">WhatsApp Order</button>
+        <button onclick="closeOrderForm()" style="margin-top:10px; background:rgb(199, 14, 14); color:rgb(14, 11, 11); border:none; padding:8px; width:100%; border-radius: 5px;">Cancel</button>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
